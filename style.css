@@ -1,44 +1,96 @@
+html {
+    height: 100%;
+}
 
 body {
     background-color: white;
     font-family: Arial, sans-serif;
     font-size: 14px;
     color: #222;
+    margin: 0;
+    
 }
 
-
 .everything {
-    color: blue;
-    margin: 0 0 0 0;
-    padding: 6px 6px 6px 6px;
-    font-size: 14px;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .header_bar {
     height: 48px;
-    width: 100%;
-    background-color: rgba(161, 157, 157, 0.801);
-    margin-top: -7px;
-    margin-left: -5px;
+    background-color: rgba(250, 246, 246, 0.801);
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 6px 6px 6px 6px;  
 }
 
+
+.link_left {
+
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.header_divider {
+    float: right;
+    flex-grow: 1;
+}
+
+.right_buttons {
+    float: right;
+}
+
+.link_right {
+    font-size: 13px;
+}
+
+
+
+
 .logo {
     min-height: 92px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 25px;
+}
+
+#google_logo {
+
+    object-fit: contain;
+    object-position: center bottom;
 }
 
 
+#search {
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 44px;
+    display: flex;
+    flex: 100%;
+    width: 700px;
+    max-width: 584px;
+    height: 34px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.searchbar {
+    padding: 30px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
 
 .search_buttons {
     padding: 18px 0 0 0;
+    margin: 11px 0 11px 0;
+    
+
 }
 .search_button {
     background-color: #f8f9fa;
@@ -46,6 +98,10 @@ body {
     border-radius: 4px;
     color: #3c4043;
     padding: 0 16px;
+    margin: 0 4px 0 4px;
     line-height: 27px;
     height: 36px;
+    font-size: 14px;
+    min-width: 54px;
+    
 }
