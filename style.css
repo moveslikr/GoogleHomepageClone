@@ -11,6 +11,16 @@ body {
     
 }
 
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
 .everything {
     display: flex;
     flex-direction: column;
@@ -19,7 +29,7 @@ body {
 
 .header_bar {
     height: 48px;
-    background-color: rgba(250, 246, 246, 0.801);
+    background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -46,9 +56,26 @@ body {
 
 .link_right {
     font-size: 13px;
+    padding: 5px;
+    margin: 5px;
 }
 
-
+.sign_in {
+    padding: 5px;
+    background-color: #2b7de9;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    line-height: 27px;
+    height: 36px;
+    font-size: 14px;
+    min-width: 96px;
+    margin: 0 8px 0 8px;
+    padding: 0 23px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
 
 
 .logo {
@@ -66,18 +93,28 @@ body {
 }
 
 
-#search {
+.search_box {
     border: 1px solid #dfe1e5;
     border-radius: 24px;
     height: 44px;
     display: flex;
     flex: 100%;
-    width: 700px;
+    width: auto;
+    margin: 0 auto;
     max-width: 584px;
     height: 34px;
     font-size: 16px;
     background-color: white;
 }
+
+#search {
+    display: flex;
+    flex: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 0 10px;
+}
+
 
 .searchbar {
     padding: 30px;
